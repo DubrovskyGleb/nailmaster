@@ -6,23 +6,247 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     <title>Nail Master</title>
 </head>
 
 <body>
+    <header class="header">
+    <div class="header__container">
+        <div class="header__logo">
+            <picture><source srcset="img/header/logo.webp"type="image/webp"><img src="img/header/logo.png" alt="logo"></picture>
+        </div>
+        <div class="burger-menu header__burger">
+            <input type="checkbox" name="burger" id="burger" />
+            <label for="burger">
+                <span class="bar bar-top"></span>
+                <span class="bar bar-middle"></span>
+                <span class="bar bar-bottom"></span>
+            </label>
+        </div>
+        <nav>
+            <ul class="header__menu header-menu">
+                <li class="header-menu__item"><a href="#about" class="scrollTo">Обо мне</a></li>
+                <li class="header-menu__item"><a href="#portfolio" class="scrollTo">Портфолио</a></li>
+                <li class="header-menu__item"><a href="#clean" class="scrollTo">Стерилизиция</a></li>
+                <li class="header-menu__item"><a href="#price" class="scrollTo">Прайс</a></li>
+                <li class="header-menu__item"><a href="#location">Расположение</a></li>
+                <li class="header-menu__item"><a href="#">Запись</a></li>
+            </ul>
+        </nav>
+        <div class="header__contacts header-contacts">
+            <i class="icon-whatsapp"></i>
+            <a class="header-contacts__phone" href="#">+7(912)272-13-37</a>
+            <i class="icon-phone"></i>
+        </div>
+    </div>
+</header>
     <section class="hero">
     <picture><source srcset="img/hero/hero.webp"type="image/webp"><img class="hero__background" src="img/hero/hero.jpg" alt="mainImg"></picture>
-    <div class="base__container hero__container">
+    <div class="hero__container">
         <div class="hero__content">
-            <span class="hero__title">Здравствуйте</span>
-            <p class="hero__description">
-                Рада видеть вас на своем сайте! Если мы уже знакомы, можете сразу переходить в раздел записи. Если вы
-                первый раз, давайте знакомится. Жмякайте кнопку далее
-            </p>
+            <span class="hero__name">Валентина</span>
+            <h1 class="hero__title">Мастер ногтевого сервиса</h1>
+            <div class="hero__description">
+                <p>
+                    Новым посетителям рекомендую ознакомится с представленной ниже информацией.
+                </p>
+                <p>Если мы уже знакомы, можете сразу переходить на страницу записи</p>
+            </div>
             <a href="#" class="hero__link">Записаться</a>
         </div>
     </div>
 </section>
+    <section id="about" class="about">
+    <div class="base__container about__container">
+        <h2 class="base__title">Обо мне</h2>
+        <div class="about__content base__grid">
+            <div>
+                <div class="about__text">
+                    <p>В 2017 году, мне посчастливилось, пройти обучение на мастера ногтевого сервиса в учебном центре
+                        "Тонако" (г.Екатеринбург).</p>
+                    <p>По окончанию курса, всё своё свободное время посвящала новому увлечению. Число постоянных
+                        посетителей
+                        росло, а дополнительный заработок позволил обзавестись хорошим оборудованием и внушительным
+                        количеством расходных материалов.</p>
+                    <p>В 2020 году, переехав в Тагил, решила любимое дело превратить в основную работу и теперь я могу
+                        предоставить каждому клиенту гибкий график и индивидуальный подход.</p>
+                </div>
+            </div>
+            <div class="about__image base__image">
+                <picture><source srcset="img/about/certificate.webp"type="image/webp"><img src="img/about/certificate.jpg" alt="cert"></picture>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="portfolio" class="portfolio">
+    <div class="base__container portfolio__container">
+        <h2 class="base__title">Мои работы</h2>
+        <div class="portfolio-slider swiper-container">
+            <div class="portfolio-slider__wrapper swiper-wrapper">
+                <div class="portfolio-slider__slide swiper-slide">
+                    <div class="portfolio-slider__image">
+                        <picture><source srcset="img/portfolio/slide1.webp"type="image/webp"><img src="img/portfolio/slide1.jpg" alt="portfolio-slide"></picture>
+                    </div>
+                </div>
+                <div class="portfolio-slider__slide swiper-slide">
+                    <div class="portfolio-slider__image">
+                        <picture><source srcset="img/portfolio/slide2.webp"type="image/webp"><img src="img/portfolio/slide2.jpg" alt="portfolio-slide"></picture>
+                    </div>
+                </div>
+                <div class="portfolio-slider__slide swiper-slide">
+                    <div class="portfolio-slider__image">
+                        <picture><source srcset="img/portfolio/slide3.webp"type="image/webp"><img src="img/portfolio/slide3.jpg" alt="portfolio-slide"></picture>
+                    </div>
+                </div>
+                <div class="portfolio-slider__slide swiper-slide">
+                    <div class="portfolio-slider__image">
+                        <picture><source srcset="img/portfolio/slide4.webp"type="image/webp"><img src="img/portfolio/slide4.jpg" alt="portfolio-slide"></picture>
+                    </div>
+                </div>
+                <div class="portfolio-slider__slide swiper-slide">
+                    <div class="portfolio-slider__image">
+                        <picture><source srcset="img/portfolio/slide5.webp"type="image/webp"><img src="img/portfolio/slide5.jpg" alt="portfolio-slide"></picture>
+                    </div>
+                </div>
+                <div class="portfolio-slider__slide swiper-slide">
+                    <div class="portfolio-slider__image">
+                        <picture><source srcset="img/portfolio/slide6.webp"type="image/webp"><img src="img/portfolio/slide6.jpg" alt="portfolio-slide"></picture>
+                    </div>
+                </div>
+                <div class="portfolio-slider__slide swiper-slide">
+                    <div class="portfolio-slider__image">
+                        <picture><source srcset="img/portfolio/slide7.webp"type="image/webp"><img src="img/portfolio/slide7.jpg" alt="portfolio-slide"></picture>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="slider-pagination"></div>
+        </div>
+    </div>
+</section>
+    <section id="clean" class="clean">
+    <div class="base__container clean__container">
+        <div class="clean__title base__title">
+            <h2>Обработка инструмента</h2>
+            <div class="base-title__line"></div>
+        </div>
+        <div class="clean__content base__grid">
+            <div class="clean__image base__image">
+                <picture><source srcset="img/about/certificate.webp"type="image/webp"><img src="img/about/certificate.jpg" alt="cert"></picture>
+            </div>
+            <div class="clean__accordion accordion">
+                <div class="accordion__item accordion-item _active">
+                    <div class="accordion-item__header">
+                        <span>1 Дезинфекция</span>
+                        <i class="icon-down-dir"></i>
+                    </div>
+                    <div class="accordion-item__content">
+                        <p>Использованный инструмент помещается в ваночку с дезраствором. Время экспозиции и
+                            концентрация раствора строго соблюдается согласно инструкции</p>
+                    </div>
+                </div>
+                <div class="accordion__item accordion-item">
+                    <div class="accordion-item__header">
+                        <span>2 ПСО</span>
+                        <i class="icon-down-dir"></i>
+                    </div>
+                    <div class="accordion-item__content">
+                        <p>Предстерилизационная очистка проводится в ультразвуковой ванне с дезраствором с поледующей
+                            механической чисткой щёткой под проточной водой</p>
+                    </div>
+                </div>
+                <div class="accordion__item accordion-item">
+                    <div class="accordion-item__header">
+                        <span>3 Сушка</span>
+                        <i class="icon-down-dir"></i>
+                    </div>
+                    <div class="accordion-item__content">
+                        <p>инструменты помещаются между одноразовыми полотенцами до полного высыхания</p>
+                    </div>
+                </div>
+                <div class="accordion__item accordion-item">
+                    <div class="accordion-item__header">
+                        <span>4 Стерилизация</span>
+                        <i class="icon-down-dir"></i>
+                    </div>
+                    <div class="accordion-item__content">
+                        <p>Запечатанный в крафт пакеты инструмент стерелизуется в сертефицированном сухожаре согласно
+                            инструкции</p>
+                    </div>
+                </div>
+                <div class="accordion__item accordion-item">
+                    <div class="accordion-item__header">
+                        <span>5 Хранение</span>
+                        <i class="icon-down-dir"></i>
+                    </div>
+                    <div class="accordion-item__content">
+                        <p>Стерильный инструмент хранится в запечатанных крафт пакетах не более 20 суток до применения
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="price" class="price">
+    <div class="base__container price__container">
+        <div class="price__title base__title">
+            <h2>Прайс-лист</h2>
+            <div class="base-title__line"></div>
+        </div>
+        <div class="base__grid price__content">
+            <div class="price-list">
+                <span>Услуга</span>
+                <span>Цена</span>
+                <span>Маникюр (без покрытия)</span>
+                <span>400</span>
+                <span>Маникюр (с покрытием)</span>
+                <span>800</span>
+                <span>Укрепление</span>
+                <span>150</span>
+                <span>Ремонт / донаращивание (1 ноготок)</span>
+                <span>50</span>
+                <span>Дизайн (слайдеры, фольга, блестки) в подарок!</span>
+            </div>
+            <div class="price-stock">
+                <div class="price-stock__item">
+                    <p>Орентировочное время работ уточняйте по телефону!</p>
+                </div>
+                <div class="price-stock__item stock-main">
+                    <p>На первое посещение действует скидка 20%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <footer class="footer">
+    <div class="footer__container base__container">
+        <div class="footer-content">
+            <a href="#" class="hero__link">Записаться</a>
+            <div class="footer-content__question">
+                <div>
+                    <span>Остались вопросы? Звоните!</span>
+                    <span>Я вас проконсультирую</span>
+                </div>
+                <a class="footer-content__phone" href="#">+7(912)272-13-37</a>
+            </div>
+            <div class="footer-content__socials">
+                <p>Либо пишите в</p>
+                <i class="icon-instagram"></i>
+                <span>или</span>
+                <i class="icon-whatsapp"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
