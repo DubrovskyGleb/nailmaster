@@ -1,5 +1,87 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FiraSansExtraCondensed;
+  font-display: swap;
+  src: url("../fonts/FiraSansExtraCondensed-Medium.woff2") format("woff2"), url("../fonts/FiraSansExtraCondensed-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: fontello;
+  font-display: swap;
+  src: url("../fonts/fontello.woff2") format("woff2"), url("../fonts/fontello.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MontserratAlternates;
+  font-display: swap;
+  src: url("../fonts/MontserratAlternates-SemiBold.woff2") format("woff2"), url("../fonts/MontserratAlternates-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MontserratAlternates;
+  font-display: swap;
+  src: url("../fonts/MontserratAlternates-Bold.woff2") format("woff2"), url("../fonts/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+[class^=icon-]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /*Обнуление*/
 
 * {
@@ -36,7 +118,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-size: 100%;
   line-height: 1;
   font-size: 20px;
@@ -94,55 +176,6 @@ h6 {
 
 /*--------------------*/
 
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "fontello";
-  src: url("../fonts/fontello.woff2?58978212") format("woff2"), url("../fonts/fontello.woff?58978212") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^=icon-]:before,
-[class*=" icon-"]:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: 0.2em;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  margin-left: 0.2em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 body._lock {
   overflow: hidden;
 }
@@ -164,7 +197,7 @@ p {
 }
 
 .base__title {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: MontserratAlternates;
   font-size: 24px;
   font-weight: 700;
   position: relative;
@@ -208,6 +241,29 @@ p {
 
 .base__grid > div:last-child {
   padding-left: 30px;
+}
+
+.base__link {
+  font-family: MontserratAlternates;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 11.5rem;
+  height: 3rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: #FC6E20;
+  border-radius: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .burger-menu {
@@ -385,7 +441,6 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0;
 }
 
 .header__logo {
@@ -446,7 +501,6 @@ p {
 }
 
 .header-contacts__phone {
-  text-decoration: none;
   color: #FFFFFF;
   font-weight: 700;
   margin-left: 12px;
@@ -461,13 +515,13 @@ nav {
 .icon-whatsapp:before {
   content: "\f232";
   color: #FFFFFF;
-  font-size: 22px;
+  font-size: 30px;
 }
 
 .icon-phone:before {
   content: "\e800";
   color: #FFFFFF;
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .icon-phone {
@@ -535,14 +589,14 @@ nav {
 }
 
 .hero__name {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: MontserratAlternates;
   font-weight: 600;
   font-size: 84px;
   margin-bottom: 24px;
 }
 
 .hero__title {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-family: FiraSansExtraCondensed;
   font-weight: 500;
   font-size: 52px;
   margin-bottom: 63px;
@@ -556,29 +610,6 @@ nav {
 
 .hero__description p {
   margin-bottom: 15px;
-}
-
-.hero__link {
-  font-family: "Montserrat Alternates", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 11.5rem;
-  height: 3rem;
-  padding: 1rem;
-  text-decoration: none;
-  color: #FFFFFF;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 1rem;
-  background-color: #FC6E20;
-  border-radius: 1.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .about {
@@ -601,11 +632,6 @@ nav {
 
 .about__text p:not(:last-child) {
   padding-bottom: 15px;
-}
-
-.portfolio__container {
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .portfolio-slider {
@@ -686,7 +712,7 @@ nav {
 }
 
 .accordion-item__header {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: MontserratAlternates;
   font-weight: 600;
   width: 100%;
   background-color: #FFE7D0;
@@ -762,7 +788,7 @@ nav {
 .price-list > span:nth-child(1),
 .price-list > span:nth-child(2) {
   background-color: #FFE7D0;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .price-list > span:nth-child(2n) {
@@ -837,6 +863,10 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 1440px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .footer-content {
@@ -875,7 +905,6 @@ nav {
 }
 
 .footer-content__phone {
-  text-decoration: none;
   color: #FFFFFF;
   font-weight: 700;
   margin-left: 30px;
@@ -906,6 +935,12 @@ nav {
     padding-right: 50px;
     padding-left: 50px;
   }
+
+  .footer__container {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
 }
 
 @media (max-width: 1540px) and (max-width: 1440px) {
@@ -922,6 +957,14 @@ nav {
   }
 
   .header__container {
+    padding-left: calc(20px + 30 * ((100vw - 320px) / 1120));
+  }
+
+  .footer__container {
+    padding-right: calc(20px + 30 * ((100vw - 320px) / 1120));
+  }
+
+  .footer__container {
     padding-left: calc(20px + 30 * ((100vw - 320px) / 1120));
   }
 }
@@ -984,16 +1027,16 @@ nav {
     margin-bottom: calc(43px + 20 * ((100vw - 320px) / 1120));
   }
 
-  .portfolio__container {
-    padding-top: calc(50px + 50 * ((100vw - 320px) / 1120));
-  }
-
-  .portfolio__container {
-    padding-bottom: calc(50px + 50 * ((100vw - 320px) / 1120));
-  }
-
   .icon-down-dir:before {
     font-size: calc(24px + 6 * ((100vw - 320px) / 1120));
+  }
+
+  .footer__container {
+    padding-top: calc(35px + 15 * ((100vw - 320px) / 1120));
+  }
+
+  .footer__container {
+    padding-bottom: calc(35px + 15 * ((100vw - 320px) / 1120));
   }
 }
 
